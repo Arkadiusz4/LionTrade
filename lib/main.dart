@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:trade_smart/screens/auth/login/login_body,dart.dart';
+import 'package:trade_smart/screens/splash_screen/bloc/splash_screen_bloc.dart';
 import 'package:trade_smart/screens/splash_screen/splash_screen_body.dart';
 
 void main() {
@@ -8,18 +11,16 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return BlocProvider(
+      create: (_) => SplashScreenBloc(),
+      child: MaterialApp(
+        title: 'Your App',
+        home: Material(
+          child: LoginPage(),
+        ),
       ),
-      home: const SplashScreenBody(),
     );
   }
 }
-
-
