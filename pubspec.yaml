@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_launcher_icons: ^0.13.1
   flutter_bloc: ^8.1.3
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:
