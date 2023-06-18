@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:trade_smart/screens/auth/login/login_constants.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -20,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            'Login Screen',
+            LoginConstants.login,
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           SizedBox(height: 32.0),
@@ -28,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Your Email Address',
+                LoginConstants.yourEmailAddress,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -37,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
               TextFormField(
                 controller: _emailController,
                 decoration: InputDecoration(
-                  hintText: 'Enter your email',
+                  hintText: LoginConstants.enterYourEmail,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
@@ -50,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Your Password',
+                LoginConstants.yourPassword,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -59,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
               TextFormField(
                 controller: _passwordController,
                 decoration: InputDecoration(
-                  hintText: 'Enter your password',
+                  hintText: LoginConstants.enterYourPassword,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
@@ -80,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
               print('Email: $email');
               print('Password: $password');
             },
-            child: Text('Login'),
+            child: Text(LoginConstants.login),
           ),
           SizedBox(height: 16.0),
           SizedBox(
@@ -94,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                 FontAwesomeIcons.google,
                 color: Colors.white,
               ),
-              label: Text('Sign Up with Google'),
+              label: Text(LoginConstants.signUpWithGoogle),
             ),
           ),
           SizedBox(height: 8.0),
@@ -109,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                 FontAwesomeIcons.apple,
                 color: Colors.white,
               ),
-              label: Text('Sign Up with Apple'),
+              label: Text(LoginConstants.signUpWithApple),
             ),
           ),
         ],
