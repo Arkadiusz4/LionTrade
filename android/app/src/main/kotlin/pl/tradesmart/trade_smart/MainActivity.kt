@@ -1,4 +1,4 @@
-package pl.tradesmart.trade_smart
+package pl.liontrade.lion_trade
 
 import io.flutter.embedding.android.FlutterActivity
 

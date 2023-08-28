@@ -1,4 +1,4 @@
-# trade_smart
+# lion_trade
 
 A new Flutter project.
 

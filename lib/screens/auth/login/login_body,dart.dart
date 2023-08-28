@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:trade_smart/screens/auth/login/login_constants.dart';
+import 'package:lion_trade/screens/auth/login/login_constants.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
