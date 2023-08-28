@@ -1,0 +1,10 @@
+{
+  "language": "Polski",
+  "loginButton": "Zaloguj",
+  "emailFormDescription": "Email",
+  "passwordFormDescription": "Hasło",
+  "emailFormHint": "Podaj email",
+  "passwordFormHint": "Podaj hasło",
+  "signUpWithGoogleButton": "Zaloguj się przez Google",
+  "signUpWithAppleButton": "Zaloguj się przez Apple"
+}

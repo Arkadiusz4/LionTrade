@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:lion_trade/screens/auth/login/login_constants.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            LoginConstants.login,
+            AppLocalizations.of(context)!.loginButton,
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           SizedBox(height: 32.0),
@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                LoginConstants.yourEmailAddress,
+                AppLocalizations.of(context)!.emailFormDescription,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
               TextFormField(
                 controller: _emailController,
                 decoration: InputDecoration(
-                  hintText: LoginConstants.enterYourEmail,
+                  hintText: AppLocalizations.of(context)!.emailFormHint,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
@@ -51,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                LoginConstants.yourPassword,
+                AppLocalizations.of(context)!.passwordFormDescription,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
               TextFormField(
                 controller: _passwordController,
                 decoration: InputDecoration(
-                  hintText: LoginConstants.enterYourPassword,
+                  hintText: AppLocalizations.of(context)!.passwordFormHint,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
               print('Email: $email');
               print('Password: $password');
             },
-            child: Text(LoginConstants.login),
+            child: Text(AppLocalizations.of(context)!.loginButton),
           ),
           SizedBox(height: 16.0),
           SizedBox(
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                 FontAwesomeIcons.google,
                 color: Colors.white,
               ),
-              label: Text(LoginConstants.signUpWithGoogle),
+              label: Text(AppLocalizations.of(context)!.signUpWithGoogleButton),
             ),
           ),
           SizedBox(height: 8.0),
@@ -110,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                 FontAwesomeIcons.apple,
                 color: Colors.white,
               ),
-              label: Text(LoginConstants.signUpWithApple),
+              label: Text(AppLocalizations.of(context)!.signUpWithAppleButton),
             ),
           ),
         ],

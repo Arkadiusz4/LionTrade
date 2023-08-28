@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "@language": {
+    "description": "The current language."
+  },
+  "loginButton": "Login",
+  "@login": {
+    "description": "Text for the login button"
+  },
+  "emailFormDescription": "Email",
+  "@emailFormDescription": {
+    "description": ""
+  },
+  "passwordFormDescription": "Password",
+  "emailFormHint": "Enter your email",
+  "passwordFormHint": "Enter your password",
+  "signUpWithGoogleButton": "Sign up with Google",
+  "signUpWithAppleButton": "Sign up with Apple"
+}
