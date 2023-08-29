@@ -75,7 +75,7 @@ class S {
     return Intl.message(
       'Email',
       name: 'emailFormDescription',
-      desc: '',
+      desc: 'Description for email form',
       args: [],
     );
   }
@@ -85,7 +85,7 @@ class S {
     return Intl.message(
       'Password',
       name: 'passwordFormDescription',
-      desc: '',
+      desc: 'Description for password form',
       args: [],
     );
   }
@@ -95,7 +95,7 @@ class S {
     return Intl.message(
       'Enter your email',
       name: 'emailFormHint',
-      desc: '',
+      desc: 'Email form hint',
       args: [],
     );
   }
@@ -105,7 +105,7 @@ class S {
     return Intl.message(
       'Enter your password',
       name: 'passwordFormHint',
-      desc: '',
+      desc: 'Password form hint',
       args: [],
     );
   }
@@ -115,7 +115,7 @@ class S {
     return Intl.message(
       'Sign up with Google',
       name: 'signUpWithGoogleButton',
-      desc: '',
+      desc: 'Text for the sign up with Google button',
       args: [],
     );
   }
@@ -125,7 +125,7 @@ class S {
     return Intl.message(
       'Sign up with Apple',
       name: 'signUpWithAppleButton',
-      desc: '',
+      desc: 'Text for the sign up with Google button',
       args: [],
     );
   }

@@ -5,15 +5,37 @@
   },
   "loginButton": "Login",
   "@login": {
+    "context": "Buttons",
     "description": "Text for the login button"
   },
   "emailFormDescription": "Email",
   "@emailFormDescription": {
-    "description": ""
+    "context": "loginScreen",
+    "description": "Description for email form"
   },
   "passwordFormDescription": "Password",
+  "@passwordFormDescription": {
+    "context": "loginScreen",
+    "description": "Description for password form"
+  },
   "emailFormHint": "Enter your email",
+  "@emailFormHint": {
+    "context": "loginScreen",
+    "description": "Email form hint"
+  },
   "passwordFormHint": "Enter your password",
+  "@passwordFormHint": {
+    "context": "loginScreen",
+    "description": "Password form hint"
+  },
   "signUpWithGoogleButton": "Sign up with Google",
-  "signUpWithAppleButton": "Sign up with Apple"
+  "@signUpWithGoogleButton": {
+    "context": "Buttons",
+    "description": "Text for the sign up with Google button"
+  },
+  "signUpWithAppleButton": "Sign up with Apple",
+  "@signUpWithAppleButton": {
+    "context": "Buttons",
+    "description": "Text for the sign up with Google button"
+  }
 }

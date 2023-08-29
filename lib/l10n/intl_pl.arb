@@ -1,10 +1,14 @@
 {
   "language": "Polski",
+
+  "@_LOGIN_SCREEN": {},
   "loginButton": "Zaloguj",
   "emailFormDescription": "Email",
   "passwordFormDescription": "Hasło",
   "emailFormHint": "Podaj email",
   "passwordFormHint": "Podaj hasło",
   "signUpWithGoogleButton": "Zaloguj się przez Google",
-  "signUpWithAppleButton": "Zaloguj się przez Apple"
+  "signUpWithAppleButton": "Zaloguj się przez Apple",
+
+  "@_REGISTER_SCREEN": {}
 }
