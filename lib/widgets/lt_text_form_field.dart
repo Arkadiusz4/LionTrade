@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lion_trade/theme/colors.dart';
 
 class LtTextFormField extends StatelessWidget {
   final TextEditingController controller;
@@ -28,7 +29,7 @@ class LtTextFormField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(
         horizontal: 20.0,
-        vertical: 20.0,
+        vertical: 15.0,
       ),
       child: TextFormField(
         controller: controller,
@@ -48,7 +49,7 @@ class LtTextFormField extends StatelessWidget {
             ),
             borderSide: BorderSide(
               width: 3.0,
-              color: Colors.blue,
+              color: LtColor.navy,
             ),
           ),
         ),

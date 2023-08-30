@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lion_trade/generated/l10n.dart';
+import 'package:lion_trade/screens/auth/login/widgets/login_buttons_section.dart';
+import 'package:lion_trade/widgets/buttons/lt_elevated_button.dart';
 import 'package:lion_trade/widgets/lt_text_form_field.dart';
 
 class LoginForm extends StatefulWidget {
@@ -31,7 +32,24 @@ class _LoginFormState extends State<LoginForm> {
             textInputType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
             hintText: S.current.emailFormHint,
-          )
+          ),
+          LtTextFormField(
+            controller: _passwordController,
+            textInputType: TextInputType.text,
+            textInputAction: TextInputAction.done,
+            hintText: S.current.passwordFormHint,
+          ),
+          TextButton(
+            onPressed: () {},
+            child: const Text('Forgot Password?'),
+          ),
+          LtElevatedButton(
+            text: S.current.loginButton,
+            onPressed: () {},
+            minWidth: 250,
+          ),
+          const Text('Conitnue with'),
+          const LoginButtonsSection(),
         ],
       ),
     );
