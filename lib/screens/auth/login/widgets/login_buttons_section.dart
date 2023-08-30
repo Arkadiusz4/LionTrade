@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
+import 'package:lion_trade/helpers/svg_constants.dart';
 import 'package:lion_trade/theme/colors.dart';
 import 'package:lion_trade/widgets/buttons/lt_elevated_button.dart';
 
@@ -18,7 +19,7 @@ class LoginButtonsSection extends StatelessWidget {
           minWidth: MediaQuery.of(context).size.width / 2 - 40,
           color: LtColor.white,
           colorText: LtColor.navy,
-          svgIconAsset: 'assets/icons/google.svg',
+          svgIconAsset: SvgConstants.google,
         ),
         LtElevatedButton.withSvgIcon(
           text: S.current.signUpWithAppleButton,
@@ -26,7 +27,7 @@ class LoginButtonsSection extends StatelessWidget {
           minWidth: MediaQuery.of(context).size.width / 2 - 40,
           color: LtColor.white,
           colorText: LtColor.navy,
-          svgIconAsset: 'assets/icons/apple.svg',
+          svgIconAsset: SvgConstants.apple,
         ),
       ],
     );
