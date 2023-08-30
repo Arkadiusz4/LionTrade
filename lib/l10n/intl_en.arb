@@ -8,6 +8,16 @@
     "context": "Buttons",
     "description": "Text for the login button"
   },
+  "registerButton": "Register",
+  "@registerButton": {
+    "context": "Buttons",
+    "description": "Text for the register button"
+  },
+  "forgotPasswordButton": "Forgot Password?",
+  "@forgotPasswordButton": {
+    "context": "Buttons",
+    "description": "Text for the forgot password button"
+  },
   "emailFormDescription": "Email",
   "@emailFormDescription": {
     "context": "loginScreen",
@@ -28,14 +38,19 @@
     "context": "loginScreen",
     "description": "Password form hint"
   },
-  "signUpWithGoogleButton": "Sign up with Google",
+  "signUpWithGoogleButton": "Google",
   "@signUpWithGoogleButton": {
     "context": "Buttons",
     "description": "Text for the sign up with Google button"
   },
-  "signUpWithAppleButton": "Sign up with Apple",
+  "signUpWithAppleButton": "Apple",
   "@signUpWithAppleButton": {
     "context": "Buttons",
     "description": "Text for the sign up with Google button"
+  },
+  "continueWith": "Continue with",
+  "@continueWith": {
+    "context": "loginScreen",
+    "description": "Text for login button section"
   }
 }

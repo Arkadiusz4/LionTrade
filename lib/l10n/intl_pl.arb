@@ -7,8 +7,11 @@
   "passwordFormDescription": "Hasło",
   "emailFormHint": "Podaj email",
   "passwordFormHint": "Podaj hasło",
-  "signUpWithGoogleButton": "Zaloguj się przez Google",
-  "signUpWithAppleButton": "Zaloguj się przez Apple",
+  "signUpWithGoogleButton": "Google",
+  "signUpWithAppleButton": "Apple",
+  "continueWith": "Kontynuuj z",
+  "forgotPasswordButton": "Zapomniałeś hasła?",
 
-  "@_REGISTER_SCREEN": {}
+  "@_REGISTER_SCREEN": {},
+  "registerButton": "Załóż konto"
 }
