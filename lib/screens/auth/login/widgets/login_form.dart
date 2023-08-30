@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
 import 'package:lion_trade/screens/auth/login/widgets/login_buttons_section.dart';
+import 'package:lion_trade/theme/colors.dart';
 import 'package:lion_trade/widgets/buttons/lt_elevated_button.dart';
 import 'package:lion_trade/widgets/lt_text_form_field.dart';
 
@@ -41,14 +42,33 @@ class _LoginFormState extends State<LoginForm> {
           ),
           TextButton(
             onPressed: () {},
-            child: const Text('Forgot Password?'),
+            child: Text(
+              S.current.forgotPasswordButton,
+              style: const TextStyle(
+                color: LtColor.black,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
           ),
           LtElevatedButton(
             text: S.current.loginButton,
             onPressed: () {},
             minWidth: 250,
           ),
-          const Text('Conitnue with'),
+          const SizedBox(
+            height: 50,
+          ),
+          Text(
+            S.current.continueWith,
+            style: const TextStyle(
+              color: LtColor.black,
+              fontSize: 14.0,
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
           const LoginButtonsSection(),
         ],
       ),
