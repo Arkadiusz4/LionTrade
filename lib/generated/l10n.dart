@@ -70,6 +70,26 @@ class S {
     );
   }
 
+  /// `Register`
+  String get registerButton {
+    return Intl.message(
+      'Register',
+      name: 'registerButton',
+      desc: 'Text for the register button',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get forgotPasswordButton {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgotPasswordButton',
+      desc: 'Text for the forgot password button',
+      args: [],
+    );
+  }
+
   /// `Email`
   String get emailFormDescription {
     return Intl.message(
@@ -110,22 +130,32 @@ class S {
     );
   }
 
-  /// `Sign up with Google`
+  /// `Google`
   String get signUpWithGoogleButton {
     return Intl.message(
-      'Sign up with Google',
+      'Google',
       name: 'signUpWithGoogleButton',
       desc: 'Text for the sign up with Google button',
       args: [],
     );
   }
 
-  /// `Sign up with Apple`
+  /// `Apple`
   String get signUpWithAppleButton {
     return Intl.message(
-      'Sign up with Apple',
+      'Apple',
       name: 'signUpWithAppleButton',
       desc: 'Text for the sign up with Google button',
+      args: [],
+    );
+  }
+
+  /// `Continue with`
+  String get continueWith {
+    return Intl.message(
+      'Continue with',
+      name: 'continueWith',
+      desc: 'Text for login button section',
       args: [],
     );
   }
