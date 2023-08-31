@@ -23,19 +23,19 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "continueWith": MessageLookupByLibrary.simpleMessage("Continue with"),
-        "emailFormDescription": MessageLookupByLibrary.simpleMessage("Email"),
         "emailFormHint":
             MessageLookupByLibrary.simpleMessage("Enter your email"),
         "forgotPasswordButton":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "language": MessageLookupByLibrary.simpleMessage("English"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
-        "passwordFormDescription":
-            MessageLookupByLibrary.simpleMessage("Password"),
+        "nameFormHint": MessageLookupByLibrary.simpleMessage("Name"),
         "passwordFormHint":
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "registerButton": MessageLookupByLibrary.simpleMessage("Register"),
         "signUpWithAppleButton": MessageLookupByLibrary.simpleMessage("Apple"),
-        "signUpWithGoogleButton": MessageLookupByLibrary.simpleMessage("Google")
+        "signUpWithGoogleButton":
+            MessageLookupByLibrary.simpleMessage("Google"),
+        "surnameFormHint": MessageLookupByLibrary.simpleMessage("Surname")
       };
 }

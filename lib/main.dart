@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:lion_trade/screens/auth/login/login_body.dart';
+import 'package:lion_trade/screens/auth/auth_body.dart';
 import 'package:lion_trade/generated/l10n.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Your App',
       home: const Material(
-        child: LoginPage(),
+        child: AuthBody(),
       ),
       supportedLocales: S.delegate.supportedLocales,
       localizationsDelegates: const [

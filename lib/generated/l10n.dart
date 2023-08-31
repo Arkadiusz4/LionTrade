@@ -90,22 +90,22 @@ class S {
     );
   }
 
-  /// `Email`
-  String get emailFormDescription {
+  /// `Name`
+  String get nameFormHint {
     return Intl.message(
-      'Email',
-      name: 'emailFormDescription',
-      desc: 'Description for email form',
+      'Name',
+      name: 'nameFormHint',
+      desc: '',
       args: [],
     );
   }
 
-  /// `Password`
-  String get passwordFormDescription {
+  /// `Surname`
+  String get surnameFormHint {
     return Intl.message(
-      'Password',
-      name: 'passwordFormDescription',
-      desc: 'Description for password form',
+      'Surname',
+      name: 'surnameFormHint',
+      desc: '',
       args: [],
     );
   }

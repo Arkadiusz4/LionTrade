@@ -23,17 +23,17 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "continueWith": MessageLookupByLibrary.simpleMessage("Kontynuuj z"),
-        "emailFormDescription": MessageLookupByLibrary.simpleMessage("Email"),
-        "emailFormHint": MessageLookupByLibrary.simpleMessage("Podaj email"),
+        "emailFormHint": MessageLookupByLibrary.simpleMessage("Email"),
         "forgotPasswordButton":
             MessageLookupByLibrary.simpleMessage("Zapomniałeś hasła?"),
         "language": MessageLookupByLibrary.simpleMessage("Polski"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Zaloguj"),
-        "passwordFormDescription":
-            MessageLookupByLibrary.simpleMessage("Hasło"),
-        "passwordFormHint": MessageLookupByLibrary.simpleMessage("Podaj hasło"),
+        "nameFormHint": MessageLookupByLibrary.simpleMessage("Imię"),
+        "passwordFormHint": MessageLookupByLibrary.simpleMessage("Hasło"),
         "registerButton": MessageLookupByLibrary.simpleMessage("Załóż konto"),
         "signUpWithAppleButton": MessageLookupByLibrary.simpleMessage("Apple"),
-        "signUpWithGoogleButton": MessageLookupByLibrary.simpleMessage("Google")
+        "signUpWithGoogleButton":
+            MessageLookupByLibrary.simpleMessage("Google"),
+        "surnameFormHint": MessageLookupByLibrary.simpleMessage("Nazwisko")
       };
 }

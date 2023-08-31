@@ -18,15 +18,15 @@
     "context": "Buttons",
     "description": "Text for the forgot password button"
   },
-  "emailFormDescription": "Email",
-  "@emailFormDescription": {
+  "nameFormHint": "Name",
+  "@nameFormDescription": {
     "context": "loginScreen",
-    "description": "Description for email form"
+    "description": "Description for name form"
   },
-  "passwordFormDescription": "Password",
-  "@passwordFormDescription": {
+  "surnameFormHint": "Surname",
+  "@surnameFormDescription": {
     "context": "loginScreen",
-    "description": "Description for password form"
+    "description": "Description for surname form"
   },
   "emailFormHint": "Enter your email",
   "@emailFormHint": {

@@ -3,15 +3,15 @@
 
   "@_LOGIN_SCREEN": {},
   "loginButton": "Zaloguj",
-  "emailFormDescription": "Email",
-  "passwordFormDescription": "Hasło",
-  "emailFormHint": "Podaj email",
-  "passwordFormHint": "Podaj hasło",
+  "emailFormHint": "Email",
+  "passwordFormHint": "Hasło",
   "signUpWithGoogleButton": "Google",
   "signUpWithAppleButton": "Apple",
   "continueWith": "Kontynuuj z",
   "forgotPasswordButton": "Zapomniałeś hasła?",
 
   "@_REGISTER_SCREEN": {},
-  "registerButton": "Załóż konto"
+  "registerButton": "Załóż konto",
+  "nameFormHint": "Imię",
+  "surnameFormHint": "Nazwisko"
 }
