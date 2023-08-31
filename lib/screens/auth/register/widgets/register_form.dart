@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
-import 'package:lion_trade/theme/colors.dart';
 import 'package:lion_trade/widgets/buttons/_buttons.dart';
 import 'package:lion_trade/widgets/form_field/_form_field.dart';
 
-class LoginForm extends StatefulWidget {
-  const LoginForm({super.key});
+class RegisterForm extends StatefulWidget {
+  const RegisterForm({super.key});
 
   @override
-  State<LoginForm> createState() => _LoginFormState();
+  State<RegisterForm> createState() => _RegisterFormState();
 }
 
-class _LoginFormState extends State<LoginForm> {
+class _RegisterFormState extends State<RegisterForm> {
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _surnameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
@@ -19,6 +20,8 @@ class _LoginFormState extends State<LoginForm> {
 
   @override
   void dispose() {
+    _nameController.dispose();
+    _surnameController.dispose();
     _emailController.dispose();
     _passwordController.dispose();
     super.dispose();
@@ -29,6 +32,18 @@ class _LoginFormState extends State<LoginForm> {
     return Form(
       child: Column(
         children: [
+          LtTextFormField(
+            controller: _nameController,
+            textInputType: TextInputType.name,
+            textInputAction: TextInputAction.next,
+            hintText: S.current.nameFormHint,
+          ),
+          LtTextFormField(
+            controller: _surnameController,
+            textInputType: TextInputType.name,
+            textInputAction: TextInputAction.next,
+            hintText: S.current.surnameFormHint,
+          ),
           LtTextFormField(
             controller: _emailController,
             textInputType: TextInputType.emailAddress,
@@ -43,19 +58,8 @@ class _LoginFormState extends State<LoginForm> {
             obscureText: _isObscure,
             suffixIcon: _suffixIcon(),
           ),
-          TextButton(
-            onPressed: () {},
-            child: Text(
-              S.current.forgotPasswordButton,
-              style: const TextStyle(
-                color: LtColor.black,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
           LtElevatedButton(
-            text: S.current.loginButton,
+            text: S.current.registerButton,
             onPressed: () {},
             minWidth: 250.0,
           ),

@@ -11,6 +11,7 @@ class LtTextFormField extends StatelessWidget {
   final bool autocorrect;
   final bool obscureText;
   final TextCapitalization textCapitalization;
+  final Widget? suffixIcon;
 
   const LtTextFormField({
     required this.controller,
@@ -21,6 +22,7 @@ class LtTextFormField extends StatelessWidget {
     this.autocorrect = true,
     this.obscureText = false,
     this.textCapitalization = TextCapitalization.none,
+    this.suffixIcon,
     Key? key,
   }) : super(key: key);
 
@@ -38,6 +40,7 @@ class LtTextFormField extends StatelessWidget {
         keyboardType: textInputType,
         decoration: InputDecoration(
           hintText: hintText,
+          suffixIcon: suffixIcon,
           border: const OutlineInputBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(15.0),
