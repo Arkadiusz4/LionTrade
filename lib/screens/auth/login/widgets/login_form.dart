@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
-import 'package:lion_trade/screens/auth/login/widgets/login_buttons_section.dart';
+import 'package:lion_trade/screens/auth/login/widgets/_login_widgets.dart';
 import 'package:lion_trade/theme/colors.dart';
-import 'package:lion_trade/widgets/buttons/lt_elevated_button.dart';
-import 'package:lion_trade/widgets/lt_text_form_field.dart';
+import 'package:lion_trade/widgets/buttons/_buttons.dart';
+import 'package:lion_trade/widgets/form_field/_form_field.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -54,10 +54,10 @@ class _LoginFormState extends State<LoginForm> {
           LtElevatedButton(
             text: S.current.loginButton,
             onPressed: () {},
-            minWidth: 250,
+            minWidth: 250.0,
           ),
           const SizedBox(
-            height: 50,
+            height: 50.0,
           ),
           Text(
             S.current.continueWith,
@@ -66,9 +66,7 @@ class _LoginFormState extends State<LoginForm> {
               fontSize: 14.0,
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          const SizedBox(height: 10.0),
           const LoginButtonsSection(),
         ],
       ),

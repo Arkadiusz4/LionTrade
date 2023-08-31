@@ -26,7 +26,7 @@ class LtLongButton extends StatelessWidget {
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.blue),
           minimumSize: MaterialStateProperty.all(
-            const Size.fromHeight(50),
+            const Size.fromHeight(50.0),
           ),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lion_trade/screens/auth/login/widgets/login_form.dart';
 import 'package:lion_trade/theme/colors.dart';
-import 'package:lion_trade/widgets/buttons/lt_elevated_button.dart';
 
 class LtToggleButton extends StatefulWidget {
   final String labelText1;
@@ -46,7 +44,6 @@ class _LtToggleButtonState extends State<LtToggleButton> {
               isSelected[index] = index == newIndex;
             }
           });
-
           widget.onToggle(newIndex);
         },
         children: <Widget>[

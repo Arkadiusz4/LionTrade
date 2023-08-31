@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lion_trade/screens/auth/login/widgets/login_buttons_section.dart';
 import 'package:lion_trade/screens/auth/login/widgets/login_form.dart';
 import 'package:lion_trade/theme/colors.dart';
-import 'package:lion_trade/widgets/lt_toggle_buttons.dart';
+import 'package:lion_trade/widgets/buttons/lt_toggle_buttons.dart';
 
 import '../../../generated/l10n.dart';
 

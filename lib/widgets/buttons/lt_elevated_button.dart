@@ -73,7 +73,7 @@ class LtElevatedButton extends StatelessWidget {
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(color),
           minimumSize: MaterialStateProperty.all(
-            Size(minWidth, 50),
+            Size(minWidth, 50.0),
           ),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(
@@ -90,8 +90,8 @@ class LtElevatedButton extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 15.0),
                 child: SvgPicture.asset(
                   svgIconAsset!,
-                  width: 30,
-                  height: 30,
+                  width: 30.0,
+                  height: 30.0,
                 ),
               ),
             Text(
