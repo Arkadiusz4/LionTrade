@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "373938865442",
+    "project_id": "liontrade-be388",
+    "storage_bucket": "liontrade-be388.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373938865442:android:1a22a2a1cd2d249a45d17b",
+        "android_client_info": {
+          "package_name": "pl.liontrade.lion_trade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373938865442-38k70ar2ki7plcqanj1dp2g5b6k4m86k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl0GTrK-MQvd1Tz3dhQmV6XUTdm2y1xHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373938865442-38k70ar2ki7plcqanj1dp2g5b6k4m86k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
