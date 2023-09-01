@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lion_trade/screens/auth/login/widgets/login_form.dart';
 import 'package:lion_trade/screens/auth/register/widgets/register_form.dart';
 import 'package:lion_trade/theme/colors.dart';
 import 'package:lion_trade/widgets/buttons/lt_toggle_buttons.dart';

@@ -67,7 +67,7 @@ class LtElevatedButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () {
           if (onPressed != null) {
-            onPressed;
+            onPressed!();
           }
         },
         style: ButtonStyle(

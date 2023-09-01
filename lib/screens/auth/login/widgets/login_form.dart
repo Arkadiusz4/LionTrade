@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
+import 'package:lion_trade/helpers/validators.dart';
 import 'package:lion_trade/theme/colors.dart';
 import 'package:lion_trade/widgets/buttons/_buttons.dart';
 import 'package:lion_trade/widgets/form_field/_form_field.dart';
@@ -16,6 +17,7 @@ class _LoginFormState extends State<LoginForm> {
   final TextEditingController _passwordController = TextEditingController();
 
   bool _isObscure = true;
+  final _formKey = GlobalKey<FormState>();
 
   @override
   void dispose() {
@@ -27,6 +29,7 @@ class _LoginFormState extends State<LoginForm> {
   @override
   Widget build(BuildContext context) {
     return Form(
+      key: _formKey,
       child: Column(
         children: [
           LtTextFormField(
@@ -34,6 +37,7 @@ class _LoginFormState extends State<LoginForm> {
             textInputType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
             hintText: S.current.emailFormHint,
+            validator: FormValidators.validateEmail,
           ),
           LtTextFormField(
             controller: _passwordController,
@@ -42,6 +46,7 @@ class _LoginFormState extends State<LoginForm> {
             hintText: S.current.passwordFormHint,
             obscureText: _isObscure,
             suffixIcon: _suffixIcon(),
+            validator: FormValidators.validatePassword,
           ),
           TextButton(
             onPressed: () {},
@@ -56,7 +61,9 @@ class _LoginFormState extends State<LoginForm> {
           ),
           LtElevatedButton(
             text: S.current.loginButton,
-            onPressed: () {},
+            onPressed: () {
+              _formKey.currentState!.validate();
+            },
             minWidth: 250.0,
           ),
         ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
+import 'package:lion_trade/helpers/validators.dart';
 import 'package:lion_trade/widgets/buttons/_buttons.dart';
 import 'package:lion_trade/widgets/form_field/_form_field.dart';
 
@@ -16,6 +17,8 @@ class _RegisterFormState extends State<RegisterForm> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
+  final _formKey = GlobalKey<FormState>();
+
   bool _isObscure = true;
 
   @override
@@ -30,6 +33,7 @@ class _RegisterFormState extends State<RegisterForm> {
   @override
   Widget build(BuildContext context) {
     return Form(
+      key: _formKey,
       child: Column(
         children: [
           LtTextFormField(
@@ -37,18 +41,21 @@ class _RegisterFormState extends State<RegisterForm> {
             textInputType: TextInputType.name,
             textInputAction: TextInputAction.next,
             hintText: S.current.nameFormHint,
+            validator: FormValidators.validateName,
           ),
           LtTextFormField(
             controller: _surnameController,
             textInputType: TextInputType.name,
             textInputAction: TextInputAction.next,
             hintText: S.current.surnameFormHint,
+            validator: FormValidators.validateName,
           ),
           LtTextFormField(
             controller: _emailController,
             textInputType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
             hintText: S.current.emailFormHint,
+            validator: FormValidators.validateEmail,
           ),
           LtTextFormField(
             controller: _passwordController,
@@ -56,11 +63,14 @@ class _RegisterFormState extends State<RegisterForm> {
             textInputAction: TextInputAction.done,
             hintText: S.current.passwordFormHint,
             obscureText: _isObscure,
+            validator: FormValidators.validatePassword,
             suffixIcon: _suffixIcon(),
           ),
           LtElevatedButton(
             text: S.current.registerButton,
-            onPressed: () {},
+            onPressed: () {
+              _formKey.currentState!.validate();
+            },
             minWidth: 250.0,
           ),
         ],
