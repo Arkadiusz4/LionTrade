@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:lion_trade/screens/auth/auth_body.dart';
 import 'package:lion_trade/generated/l10n.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:lion_trade/screens/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,6 +11,8 @@ void main() async {
   runApp(const MyApp());
 }
 
+final navigatorKey = GlobalKey<NavigatorState>();
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -18,8 +20,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Your App',
-      home: const Material(
-        child: AuthBody(),
+      home: MaterialApp(
+        navigatorKey: navigatorKey,
+        home: const MainPage(),
       ),
       supportedLocales: S.delegate.supportedLocales,
       localizationsDelegates: const [
