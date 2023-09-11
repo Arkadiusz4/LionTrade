@@ -1,66 +1,22 @@
-import '_models.dart';
+import 'package:equatable/equatable.dart';
 
-class User {
-  final int id;
-  final String email;
-  final String firstName;
-  final String lastName;
-  final String phoneNumber;
-  final DateTime registrationDate;
-  final List<News> savedNews;
-  final List<News> likedNews;
-  final AppleAuth? appleAuth;
-  final GoogleAuth? googleAuth;
-  final FacebookAuth? facebookAuth;
+class User extends Equatable {
+  final String id;
+  final String? email;
+  final String? name;
 
-  final bool receiveNewsUpdates;
-  final bool receiveEventNotifications;
-  final bool receivePromotionalEmails;
-
-  User({
+  const User({
     required this.id,
-    required this.email,
-    required this.firstName,
-    required this.lastName,
-    required this.phoneNumber,
-    required this.registrationDate,
-    required this.savedNews,
-    required this.likedNews,
-    this.appleAuth,
-    this.googleAuth,
-    this.facebookAuth,
-    this.receiveNewsUpdates = true,
-    this.receiveEventNotifications = true,
-    this.receivePromotionalEmails = true,
+    this.email,
+    this.name,
   });
-}
 
-class AppleAuth {
-  final String appleId;
-  final String appleEmail;
+  static const empty = User(id: '');
 
-  AppleAuth({
-    required this.appleId,
-    required this.appleEmail,
-  });
-}
+  bool get isEmpty => this == User.empty;
 
-class GoogleAuth {
-  final String googleId;
-  final String googleEmail;
+  bool get isNotEmpty => this != User.empty;
 
-  GoogleAuth({
-    required this.googleId,
-    required this.googleEmail,
-  });
-}
-
-class FacebookAuth {
-  final String facebookId;
-  final String facebookEmail;
-
-  FacebookAuth({
-    required this.facebookId,
-    required this.facebookEmail,
-  });
+  @override
+  List<Object?> get props => [id, email, name];
 }

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
 
+  static Page page() => const MaterialPage<void>(child: HomeBody());
+
   @override
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;

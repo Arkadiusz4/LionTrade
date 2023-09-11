@@ -1,36 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:lion_trade/generated/l10n.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:lion_trade/screens/main_page.dart';
+import 'package:lion_trade/repositories/auth_repository.dart';
+import 'package:lion_trade/screens/app_view/app.dart';
+import 'package:lion_trade/screens/app_view/bloc_observer.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  Bloc.observer = AppBlocObserver();
+
   await Firebase.initializeApp();
 
-  runApp(const MyApp());
-}
+  final authRepository = AuthRepository();
+  await authRepository.user.first;
 
-final navigatorKey = GlobalKey<NavigatorState>();
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Your App',
-      home: MaterialApp(
-        navigatorKey: navigatorKey,
-        home: const MainPage(),
-      ),
-      supportedLocales: S.delegate.supportedLocales,
-      localizationsDelegates: const [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
-    );
-  }
+  runApp(App(authRepository: authRepository));
 }

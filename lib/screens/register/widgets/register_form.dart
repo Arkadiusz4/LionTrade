@@ -41,21 +41,21 @@ class _RegisterFormState extends State<RegisterForm> {
             textInputType: TextInputType.name,
             textInputAction: TextInputAction.next,
             hintText: S.current.nameFormHint,
-            validator: FormValidators.validateName,
+            //   validator: FormValidators.validateName,
           ),
           LtTextFormField(
             controller: _surnameController,
             textInputType: TextInputType.name,
             textInputAction: TextInputAction.next,
             hintText: S.current.surnameFormHint,
-            validator: FormValidators.validateName,
+            //     validator: FormValidators.validateName,
           ),
           LtTextFormField(
             controller: _emailController,
             textInputType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
             hintText: S.current.emailFormHint,
-            validator: FormValidators.validateEmail,
+            // validator: FormValidators.validateEmail,
           ),
           LtTextFormField(
             controller: _passwordController,
@@ -63,7 +63,7 @@ class _RegisterFormState extends State<RegisterForm> {
             textInputAction: TextInputAction.done,
             hintText: S.current.passwordFormHint,
             obscureText: _isObscure,
-            validator: FormValidators.validatePassword,
+            //    validator: FormValidators.validatePassword,
             suffixIcon: _suffixIcon(),
           ),
           LtElevatedButton(

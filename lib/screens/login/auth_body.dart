@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:lion_trade/screens/auth/register/widgets/register_form.dart';
 import 'package:lion_trade/theme/colors.dart';
@@ -8,6 +9,8 @@ import 'login/widgets/_login_widgets.dart';
 
 class AuthBody extends StatefulWidget {
   const AuthBody({super.key});
+
+  static Page page() => const MaterialPage<void>(child: AuthBody());
 
   @override
   State<AuthBody> createState() => _AuthBodyState();
@@ -97,3 +100,5 @@ class _AuthBodyState extends State<AuthBody> {
     );
   }
 }
+
+ */
