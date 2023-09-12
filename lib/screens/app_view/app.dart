@@ -37,10 +37,10 @@ class AppView extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Your App',
-      home: FlowBuilder(
-        state: context.select((AppBloc bloc) => bloc.state.appStatus),
-        onGeneratePages: onGenerateAppViewPages,
-      ),
+      // home: FlowBuilder(
+      //   state: context.select((AppBloc bloc) => bloc.state.appStatus),
+      //   onGeneratePages: onGenerateAppViewPages,
+      // ),
       supportedLocales: S.delegate.supportedLocales,
       localizationsDelegates: const [
         S.delegate,

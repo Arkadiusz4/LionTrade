@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lion_trade/screens/login/login/cubit/login_cubit.dart';
-import 'package:lion_trade/screens/login/login_body.dart';
+import 'package:lion_trade/screens/login/login_page.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -10,12 +8,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: BlocBuilder<LoginCubit, LoginState>(
-        builder: (BuildContext context, LoginState state) {
-          return const CircularProgressIndicator();
-        },
-      ),
-    );
+    return LoginPage();
   }
 }
