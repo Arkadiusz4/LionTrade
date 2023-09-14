@@ -22,18 +22,37 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "changePassword": MessageLookupByLibrary.simpleMessage("Zmień hasło"),
+        "changePasswordDescription":
+            MessageLookupByLibrary.simpleMessage("Zmień hasło"),
+        "contactPermissions":
+            MessageLookupByLibrary.simpleMessage("Uprawnienia"),
+        "contactPermissionsDescription": MessageLookupByLibrary.simpleMessage(
+            "Powiadomienia i uprawnienia aplikacji"),
         "continueWith": MessageLookupByLibrary.simpleMessage("Kontynuuj z"),
+        "deleteAccount": MessageLookupByLibrary.simpleMessage("Usuń konto"),
+        "deleteAccountDescription":
+            MessageLookupByLibrary.simpleMessage("Usuń swoje konto"),
         "emailFormHint": MessageLookupByLibrary.simpleMessage("Email"),
         "forgotPasswordButton":
             MessageLookupByLibrary.simpleMessage("Zapomniałeś hasła?"),
         "language": MessageLookupByLibrary.simpleMessage("Polski"),
+        "logOut": MessageLookupByLibrary.simpleMessage("Wyloguj"),
+        "logOutDescription":
+            MessageLookupByLibrary.simpleMessage("Wyloguj się z aplikacji"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Zaloguj"),
         "nameFormHint": MessageLookupByLibrary.simpleMessage("Imię"),
         "passwordFormHint": MessageLookupByLibrary.simpleMessage("Hasło"),
+        "personalInfo": MessageLookupByLibrary.simpleMessage("Dane osobiste"),
+        "personalInfoDescription":
+            MessageLookupByLibrary.simpleMessage("Język, ustawienia konta"),
         "registerButton": MessageLookupByLibrary.simpleMessage("Załóż konto"),
         "signUpWithAppleButton": MessageLookupByLibrary.simpleMessage("Apple"),
         "signUpWithGoogleButton":
             MessageLookupByLibrary.simpleMessage("Google"),
+        "support": MessageLookupByLibrary.simpleMessage("Wsparice"),
+        "supportDescription":
+            MessageLookupByLibrary.simpleMessage("Więcej o aplikacji"),
         "surnameFormHint": MessageLookupByLibrary.simpleMessage("Nazwisko")
       };
 }

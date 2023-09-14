@@ -159,6 +159,126 @@ class S {
       args: [],
     );
   }
+
+  /// `Personal info`
+  String get personalInfo {
+    return Intl.message(
+      'Personal info',
+      name: 'personalInfo',
+      desc: 'Text for card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Language, account settings`
+  String get personalInfoDescription {
+    return Intl.message(
+      'Language, account settings',
+      name: 'personalInfoDescription',
+      desc: 'Text for description on card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Contact permissions`
+  String get contactPermissions {
+    return Intl.message(
+      'Contact permissions',
+      name: 'contactPermissions',
+      desc: 'Text for card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Notifications and app permissions`
+  String get contactPermissionsDescription {
+    return Intl.message(
+      'Notifications and app permissions',
+      name: 'contactPermissionsDescription',
+      desc: 'Text for description on card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Change password`
+  String get changePassword {
+    return Intl.message(
+      'Change password',
+      name: 'changePassword',
+      desc: 'Text for card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Change password`
+  String get changePasswordDescription {
+    return Intl.message(
+      'Change password',
+      name: 'changePasswordDescription',
+      desc: 'Text for description on card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Support`
+  String get support {
+    return Intl.message(
+      'Support',
+      name: 'support',
+      desc: 'Text for card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Know about our app`
+  String get supportDescription {
+    return Intl.message(
+      'Know about our app',
+      name: 'supportDescription',
+      desc: 'Text for description on card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Log out`
+  String get logOut {
+    return Intl.message(
+      'Log out',
+      name: 'logOut',
+      desc: 'Text for card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Log out from the app`
+  String get logOutDescription {
+    return Intl.message(
+      'Log out from the app',
+      name: 'logOutDescription',
+      desc: 'Text for description on card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Delete account`
+  String get deleteAccount {
+    return Intl.message(
+      'Delete account',
+      name: 'deleteAccount',
+      desc: 'Text for card in settings screen',
+      args: [],
+    );
+  }
+
+  /// `Delete your account`
+  String get deleteAccountDescription {
+    return Intl.message(
+      'Delete your account',
+      name: 'deleteAccountDescription',
+      desc: 'Text for description on card in settings screen',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

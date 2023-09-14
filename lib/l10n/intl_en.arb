@@ -78,7 +78,7 @@
     "context": "settingsScreen",
     "description": "Text for card in settings screen"
   },
-  "changePasswordDescription": "Create new password for your account",
+  "changePasswordDescription": "Change password",
   "@changePasswordDescription": {
     "context": "settingsScreen",
     "description": "Text for description on card in settings screen"

@@ -22,20 +22,40 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "changePassword":
+            MessageLookupByLibrary.simpleMessage("Change password"),
+        "changePasswordDescription":
+            MessageLookupByLibrary.simpleMessage("Change password"),
+        "contactPermissions":
+            MessageLookupByLibrary.simpleMessage("Contact permissions"),
+        "contactPermissionsDescription": MessageLookupByLibrary.simpleMessage(
+            "Notifications and app permissions"),
         "continueWith": MessageLookupByLibrary.simpleMessage("Continue with"),
+        "deleteAccount": MessageLookupByLibrary.simpleMessage("Delete account"),
+        "deleteAccountDescription":
+            MessageLookupByLibrary.simpleMessage("Delete your account"),
         "emailFormHint":
             MessageLookupByLibrary.simpleMessage("Enter your email"),
         "forgotPasswordButton":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "language": MessageLookupByLibrary.simpleMessage("English"),
+        "logOut": MessageLookupByLibrary.simpleMessage("Log out"),
+        "logOutDescription":
+            MessageLookupByLibrary.simpleMessage("Log out from the app"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
         "nameFormHint": MessageLookupByLibrary.simpleMessage("Name"),
         "passwordFormHint":
             MessageLookupByLibrary.simpleMessage("Enter your password"),
+        "personalInfo": MessageLookupByLibrary.simpleMessage("Personal info"),
+        "personalInfoDescription":
+            MessageLookupByLibrary.simpleMessage("Language, account settings"),
         "registerButton": MessageLookupByLibrary.simpleMessage("Register"),
         "signUpWithAppleButton": MessageLookupByLibrary.simpleMessage("Apple"),
         "signUpWithGoogleButton":
             MessageLookupByLibrary.simpleMessage("Google"),
+        "support": MessageLookupByLibrary.simpleMessage("Support"),
+        "supportDescription":
+            MessageLookupByLibrary.simpleMessage("Know about our app"),
         "surnameFormHint": MessageLookupByLibrary.simpleMessage("Surname")
       };
 }
