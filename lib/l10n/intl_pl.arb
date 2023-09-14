@@ -13,5 +13,19 @@
   "@_REGISTER_SCREEN": {},
   "registerButton": "Załóż konto",
   "nameFormHint": "Imię",
-  "surnameFormHint": "Nazwisko"
+  "surnameFormHint": "Nazwisko",
+
+  "@_SETTINGS_SCREEN": {},
+  "personalInfo": "Dane osobiste",
+  "personalInfoDescription": "Język, ustawienia konta",
+  "contactPermissions": "Uprawnienia",
+  "contactPermissionsDescription": "Powiadomienia i uprawnienia aplikacji",
+  "changePassword": "Zmień hasło",
+  "changePasswordDescription": "Utwórz nowe hasło",
+  "support": "Wsparice",
+  "supportDescription": "Więcej o aplikacji",
+  "logOut": "Wyloguj",
+  "logOutDescription": "Wyloguj się z aplikacji",
+  "deleteAccount": "Usuń konto",
+  "deleteAccountDescription": "Usuń swoje konto"
 }

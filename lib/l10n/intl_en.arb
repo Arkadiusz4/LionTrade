@@ -52,5 +52,65 @@
   "@continueWith": {
     "context": "loginScreen",
     "description": "Text for login button section"
+  },
+  "personalInfo": "Personal info",
+  "@personalInfo": {
+    "context": "settingsScreen",
+    "description": "Text for card in settings screen"
+  },
+  "personalInfoDescription": "Language, account settings",
+  "@personalInfoDescription": {
+    "context": "settingsScreen",
+    "description": "Text for description on card in settings screen"
+  },
+  "contactPermissions": "Contact permissions",
+  "@contactPermissions": {
+    "context": "settingsScreen",
+    "description": "Text for card in settings screen"
+  },
+  "contactPermissionsDescription": "Notifications and app permissions",
+  "@contactPermissionsDescription": {
+    "context": "settingsScreen",
+    "description": "Text for description on card in settings screen"
+  },
+  "changePassword": "Change password",
+  "@changePassword": {
+    "context": "settingsScreen",
+    "description": "Text for card in settings screen"
+  },
+  "changePasswordDescription": "Create new password for your account",
+  "@changePasswordDescription": {
+    "context": "settingsScreen",
+    "description": "Text for description on card in settings screen"
+  },
+  "support": "Support",
+  "@support": {
+    "context": "settingsScreen",
+    "description": "Text for card in settings screen"
+  },
+  "supportDescription": "Know about our app",
+  "@supportDescription": {
+    "context": "settingsScreen",
+    "description": "Text for description on card in settings screen"
+  },
+  "logOut": "Log out",
+  "@logOut": {
+    "context": "settingsScreen",
+    "description": "Text for card in settings screen"
+  },
+  "logOutDescription": "Log out from the app",
+  "@logOutDescription": {
+    "context": "settingsScreen",
+    "description": "Text for description on card in settings screen"
+  },
+  "deleteAccount": "Delete account",
+  "@deleteAccount": {
+    "context": "settingsScreen",
+    "description": "Text for card in settings screen"
+  },
+  "deleteAccountDescription": "Delete your account",
+  "@deleteAccountDescription": {
+    "context": "settingsScreen",
+    "description": "Text for description on card in settings screen"
   }
 }
