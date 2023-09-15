@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
 import 'package:lion_trade/widgets/cards/lt_narrow_card.dart';
@@ -7,43 +8,29 @@ class SettingsCardsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser;
+
     return Column(
       children: [
-        LtNarrowCard(
-            title: S.current.personalInfo,
-            description: S.current.personalInfoDescription,
-            icon: Icons.person,
-            onPressed: () {}),
-        LtNarrowCard(
-            title: S.current.contactPermissions,
-            description: S.current.contactPermissionsDescription,
-            icon: Icons.contact_mail,
-            onPressed: () {}),
+        LtNarrowCard(title: S.current.personalInfo, icon: Icons.person, onPressed: () {}),
+        LtNarrowCard(title: S.current.contactPermissions, icon: Icons.contact_mail, onPressed: () {}),
         LtNarrowCard(
           title: S.current.changePassword,
-          description: S.current.changePasswordDescription,
           icon: Icons.key,
           onPressed: () {},
         ),
-        LtNarrowCard(
-            title: S.current.support,
-            description: S.current.supportDescription,
-            icon: Icons.contact_support,
-            onPressed: () {}),
-        LtNarrowCard(
-            title: S.current.logOut,
-            description: S.current.logOutDescription,
-            icon: Icons.logout,
-            iconColor: Colors.red,
-            onPressed: () {}),
-        const SizedBox(height: 100.0),
+        LtNarrowCard(title: S.current.support, icon: Icons.contact_support, onPressed: () {}),
+        LtNarrowCard(title: S.current.logOut, icon: Icons.logout, iconColor: Colors.red, onPressed: _signOut),
         LtNarrowCard(
           title: S.current.deleteAccount,
-          description: S.current.deleteAccountDescription,
           icon: Icons.delete,
           onPressed: () {},
         ),
       ],
     );
+  }
+
+  void _signOut() async {
+    FirebaseAuth.instance.signOut();
   }
 }

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class UserProfileCard extends StatelessWidget {
@@ -5,6 +6,8 @@ class UserProfileCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser;
+
     return Card(
       elevation: 4.0,
       margin: const EdgeInsets.all(16.0),
@@ -23,14 +26,14 @@ class UserProfileCard extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8.0),
-           const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.email),
-                SizedBox(width: 8.0),
+                const Icon(Icons.email),
+                const SizedBox(width: 8.0),
                 Text(
-                  'johndoe@example.com',
-                  style: TextStyle(fontSize: 16.0),
+                  user!.email!,
+                  style: const TextStyle(fontSize: 16.0),
                 ),
               ],
             ),
