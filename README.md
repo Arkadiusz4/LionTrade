@@ -1,16 +1,32 @@
 # lion_trade
 
-A new Flutter project.
+## Development Setup
 
-## Getting Started
+### Installing Dart & Flutter
 
-This project is a starting point for a Flutter application.
+Follow instructions to
+install [Dart](https://dart.dev/get-dart) & [Flutter](https://flutter.dev/docs/get-started/install)
 
-A few resources to get you started if this is your first Flutter project:
+### Install Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To install dev dependencies run `flutter pub get`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+--------------------
+
+### Keys
+
+We have sensitive keys that are hashed and that needs to be decrypted on your machine in order for you to be able to
+build an application or even deploy to production. To decrypt the keys, run where you replace `SECURE_PASSWORD` with our
+secure password.
+
+> NOTE: add `-md md5` to all the OpenSSL commands.
+
+```bash
+openssl enc -aes-256-cbc -in lib/services/api_key.dart.enc -out lib/services/api_key.dart -k SECURE_PASSWORD -d -a -md md5
+```
+
+In the event you will have to encrypt a file, again replacing `SECURE_PASSWORD` with our secure password:
+
+```bash
+openssl enc -aes-256-cbc -salt -in INPUT_FILE -out OUTPUT_FILE -k SECURE_PASSWORD -a
+```
