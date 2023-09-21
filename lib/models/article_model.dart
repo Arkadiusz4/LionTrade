@@ -1,28 +1,11 @@
-class ArticleModel {
-  final String author;
+class Article {
   final String title;
-  final String description;
-  final String url;
-  final String image;
-  final String date;
-  final String content;
 
-  ArticleModel(
-    this.author,
-    this.title,
-    this.description,
-    this.url,
-    this.image,
-    this.date,
-    this.content,
-  );
+  const Article({
+    required this.title,
+  });
 
-  ArticleModel.fromJson(Map<String, dynamic> json)
-      : author = json["author"],
-        title = json["title"],
-        description = json["description"],
-        url = json["url"],
-        image = json["urlToImage"],
-        date = json["publishedAt"],
-        content = json["content"];
+  factory Article.fromJson(Map<String, dynamic> json) {
+    return Article(title: json['title']);
+  }
 }
