@@ -4,8 +4,8 @@ import 'package:lion_trade/models/article_model.dart';
 import 'package:http/http.dart' as http;
 import 'package:lion_trade/services/api_key.dart';
 
-Future<List<Article>> fetchNews() async {
-  const String apiUrl = 'https://newsapi.org/v2/top-headlines?country=pl&category=business';
+Future<List<NewsArticle>> fetchNews() async {
+  const String apiUrl = 'https://newsapi.org/v2/everything?q=Apple&from=2023-09-20&sortBy=popularity';
 
   final response = await http.get(Uri.parse('$apiUrl&apiKey=$newsApiOrgKey'));
 
@@ -14,10 +14,10 @@ Future<List<Article>> fetchNews() async {
 
     if (data['status'] == 'ok') {
       final List<dynamic> articleData = data['articles'];
-      final List<Article> loadedArticles = [];
+      final List<NewsArticle> loadedArticles = [];
 
       for (final articleJson in articleData) {
-        loadedArticles.add(Article.fromJson(articleJson));
+        loadedArticles.add(NewsArticle.fromJson(articleJson));
       }
 
       return loadedArticles;
