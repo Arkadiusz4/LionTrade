@@ -47,6 +47,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/welcome_chart.png
     - assets/logo.png
     - assets/icons/
 
