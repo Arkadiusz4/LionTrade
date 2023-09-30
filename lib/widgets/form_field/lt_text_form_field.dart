@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lion_trade/theme/colors.dart';
+import 'package:lion_trade/style/colors.dart';
 
 class LtTextFormField extends StatelessWidget {
   final TextEditingController controller;
@@ -39,6 +39,8 @@ class LtTextFormField extends StatelessWidget {
         textInputAction: textInputAction,
         keyboardType: textInputType,
         decoration: InputDecoration(
+          filled: true,
+          fillColor: Colors.grey,
           hintText: hintText,
           suffixIcon: suffixIcon,
           border: const OutlineInputBorder(
@@ -52,7 +54,7 @@ class LtTextFormField extends StatelessWidget {
             ),
             borderSide: BorderSide(
               width: 3.0,
-              color: LtColor.navy,
+              color: LtColor.white,
             ),
           ),
         ),

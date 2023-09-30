@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:lion_trade/theme/colors.dart';
+import 'package:lion_trade/style/colors.dart';
 
 class LtNarrowCard extends StatelessWidget {
   final String title;

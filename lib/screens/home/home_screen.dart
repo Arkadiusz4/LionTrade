@@ -5,7 +5,7 @@ import 'package:lion_trade/screens/news/news_page.dart';
 import 'package:lion_trade/screens/portfolio/portfolio_page.dart';
 import 'package:lion_trade/screens/settings/settings_page.dart';
 import 'package:lion_trade/screens/stock/stock_page.dart';
-import 'package:lion_trade/theme/colors.dart';
+import 'package:lion_trade/style/colors.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

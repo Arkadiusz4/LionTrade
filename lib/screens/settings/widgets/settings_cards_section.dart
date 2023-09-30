@@ -31,6 +31,6 @@ class SettingsCardsSection extends StatelessWidget {
   }
 
   void _signOut() async {
-    FirebaseAuth.instance.signOut();
+    await FirebaseAuth.instance.signOut();
   }
 }

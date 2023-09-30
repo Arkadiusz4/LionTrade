@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
 import 'package:lion_trade/helpers/validators.dart';
-import 'package:lion_trade/theme/colors.dart';
+import 'package:lion_trade/style/colors.dart';
 import 'package:lion_trade/widgets/buttons/_buttons.dart';
 import 'package:lion_trade/widgets/form_field/_form_field.dart';
 
@@ -79,7 +79,7 @@ class _LoginFormState extends State<LoginForm> {
     showDialog(
       context: context,
       barrierDismissible: false,
-      builder: (context) => Center(
+      builder: (context) => const Center(
         child: CircularProgressIndicator(),
       ),
     );
@@ -93,7 +93,7 @@ class _LoginFormState extends State<LoginForm> {
       print(e);
     }
 
-    navigatorKey.currentState!.popUntil((route) => route.isFirst);
+    navigatorKey.currentState?.popUntil((route) => route.isFirst);
   }
 
   Widget _suffixIcon() {
