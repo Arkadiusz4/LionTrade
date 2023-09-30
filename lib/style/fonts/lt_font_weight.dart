@@ -12,7 +12,7 @@ enum LtFontWeight {
   black,
 }
 
-extension FhFontWeightExt on LtFontWeight {
+extension LtFontWeightExt on LtFontWeight {
   FontWeight get fontWeight {
     switch (this) {
       case LtFontWeight.thin:

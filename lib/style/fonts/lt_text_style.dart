@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lion_trade/style/colors.dart';
 import 'package:lion_trade/style/fonts/lt_font_weight.dart';
 
-class FhTextStyle {
+class LtTextStyle {
   static final FontWeight _interLight = LtFontWeight.light.fontWeight;
   static final FontWeight _interRegular = LtFontWeight.regular.fontWeight;
   static final FontWeight _interMedium = LtFontWeight.medium.fontWeight;
@@ -12,31 +12,11 @@ class FhTextStyle {
 
   static const TextStyle _inter = TextStyle(
     fontFamily: 'Inter',
-    color: LtColor.black,
+    color: LtColor.white,
     height: 1,
   );
 
   static final TextStyle _interSpaced = _inter.copyWith(letterSpacing: 1.0);
-
-  static final TextStyle _inter12regular = _inter.copyWith(
-    fontSize: 12.0,
-    fontWeight: _interRegular,
-  );
-
-  static final TextStyle _inter12mediumSpaced = _interSpaced.copyWith(
-    fontSize: 12.0,
-    fontWeight: _interMedium,
-  );
-
-  static final TextStyle _inter12semibold = _inter.copyWith(
-    fontSize: 12.0,
-    fontWeight: _interSemiBold,
-  );
-
-  static final TextStyle _inter12semiboldSpaced = _interSpaced.copyWith(
-    fontSize: 12.0,
-    fontWeight: _interSemiBold,
-  );
 
   static final TextStyle _inter14regular = _inter.copyWith(
     fontSize: 14.0,
@@ -58,12 +38,12 @@ class FhTextStyle {
     fontWeight: _interRegular,
   );
 
-  static final TextStyle _inter14semibold = _inter.copyWith(
+  static final TextStyle _inter14semiBold = _inter.copyWith(
     fontSize: 14.0,
     fontWeight: _interSemiBold,
   );
 
-  static final TextStyle _inter14semiboldSpaced = _interSpaced.copyWith(
+  static final TextStyle _inter14semiBoldSpaced = _interSpaced.copyWith(
     fontSize: 14.0,
     fontWeight: _interSemiBold,
   );
@@ -192,10 +172,11 @@ class FhTextStyle {
     double letterSpacing = 0.0,
     double fontSize = 12.0,
     LtFontWeight LtFontWeight = LtFontWeight.medium,
+   Color color = LtColor.white,
   }) {
     return TextStyle(
       fontFamily: 'Inter',
-      color: LtColor.white,
+      color: color,
       fontSize: fontSize,
       letterSpacing: letterSpacing,
       height: 1.0,
@@ -203,17 +184,13 @@ class FhTextStyle {
     );
   }
 
-  static final TextStyle inter12regular = _inter12regular;
-  static final TextStyle inter12mediumSpaced = _inter12mediumSpaced;
-  static final TextStyle inter12semibold = _inter12semibold;
-  static final TextStyle inter12semiboldSpaced = _inter12semiboldSpaced;
   static final TextStyle inter14boldSpaced = _inter14boldSpaced;
   static final TextStyle inter14medium = _inter14medium;
   static final TextStyle inter14mediumSpaced = _inter14mediumSpaced;
   static final TextStyle inter14regular = _inter14regular;
   static final TextStyle inter14regularSpaced = _inter14regularSpaced;
-  static final TextStyle inter14semibold = _inter14semibold;
-  static final TextStyle inter14semiboldSpaced = _inter14semiboldSpaced;
+  static final TextStyle inter14semibold = _inter14semiBold;
+  static final TextStyle inter14semiboldSpaced = _inter14semiBoldSpaced;
   static final TextStyle inter15lightSpaced = _inter15lightSpaced;
   static final TextStyle inter15regular = _inter15regular;
   static final TextStyle inter15regularSpaced = _inter15regularSpaced;

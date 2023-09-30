@@ -49,7 +49,7 @@ flutter:
   assets:
     - assets/welcome_chart.png
     - assets/logo.png
-    - assets/icons/
+    - assets/icons/login/
 
   fonts:
     - family: Inter
