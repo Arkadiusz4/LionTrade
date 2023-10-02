@@ -2,30 +2,11 @@
   "language": "Polski",
 
   "@_LOGIN_SCREEN": {},
-  "loginButton": "Zaloguj",
-  "emailFormHint": "Email",
-  "passwordFormHint": "Hasło",
-  "signUpWithGoogleButton": "Google",
-  "signUpWithAppleButton": "Apple",
-  "continueWith": "Kontynuuj z",
+  "loginButton": "Zaczynajmy",
+  "welcomeText": "Twoja historia zaczyna się tutaj",
+  "signInText": "Zaloguj się do twojego konta",
+  "emailHint": "email",
+  "passwordHint": "hasło",
   "forgotPasswordButton": "Zapomniałeś hasła?",
-
-  "@_REGISTER_SCREEN": {},
-  "registerButton": "Załóż konto",
-  "nameFormHint": "Imię",
-  "surnameFormHint": "Nazwisko",
-
-  "@_SETTINGS_SCREEN": {},
-  "personalInfo": "Dane osobiste",
-  "personalInfoDescription": "Język, ustawienia konta",
-  "contactPermissions": "Uprawnienia",
-  "contactPermissionsDescription": "Powiadomienia i uprawnienia aplikacji",
-  "changePassword": "Zmień hasło",
-  "changePasswordDescription": "Zmień hasło",
-  "support": "Wsparice",
-  "supportDescription": "Więcej o aplikacji",
-  "logOut": "Wyloguj",
-  "logOutDescription": "Wyloguj się z aplikacji",
-  "deleteAccount": "Usuń konto",
-  "deleteAccountDescription": "Usuń swoje konto"
+  "otherLogins": "Kontynuuj przez inne platofrmy albo biometrykę"
 }

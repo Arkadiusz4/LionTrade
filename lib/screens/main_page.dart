@@ -16,8 +16,8 @@ class MainPage extends StatelessWidget {
             return Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
             return Center(child: Text("Something went wrong"));
-          } else if (snapshot.hasData) {
-            return const HomeScreen();
+          // } else if (snapshot.hasData) {
+          //   //return const HomeScreen();
           } else {
             return const LoginPage();
           }

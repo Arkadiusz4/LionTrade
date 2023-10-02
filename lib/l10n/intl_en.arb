@@ -3,114 +3,39 @@
   "@language": {
     "description": "The current language."
   },
-  "loginButton": "Login",
-  "@login": {
+  "loginButton": "Let's start",
+  "@loginButton": {
     "context": "Buttons",
     "description": "Text for the login button"
   },
-  "registerButton": "Register",
-  "@registerButton": {
-    "context": "Buttons",
-    "description": "Text for the register button"
+  "welcomeText": "Your history begins here",
+  "@welcomeText": {
+    "context": "Text",
+    "description": "Text for the welcome header"
+  },
+  "signInText": "Please sign in to your account",
+  "@signInText": {
+    "context": "Text",
+    "description": "Text for the login page"
+  },
+  "emailHint": "email",
+  "@emailHint": {
+    "context": "Text",
+    "description": "Text for the login page"
+  },
+  "passwordHint": "password",
+  "@passwordHint": {
+    "context": "Text",
+    "description": "Text for the login page"
   },
   "forgotPasswordButton": "Forgot Password?",
   "@forgotPasswordButton": {
     "context": "Buttons",
     "description": "Text for the forgot password button"
   },
-  "nameFormHint": "Name",
-  "@nameFormDescription": {
-    "context": "loginScreen",
-    "description": "Description for name form"
-  },
-  "surnameFormHint": "Surname",
-  "@surnameFormDescription": {
-    "context": "loginScreen",
-    "description": "Description for surname form"
-  },
-  "emailFormHint": "Enter your email",
-  "@emailFormHint": {
-    "context": "loginScreen",
-    "description": "Email form hint"
-  },
-  "passwordFormHint": "Enter your password",
-  "@passwordFormHint": {
-    "context": "loginScreen",
-    "description": "Password form hint"
-  },
-  "signUpWithGoogleButton": "Google",
-  "@signUpWithGoogleButton": {
-    "context": "Buttons",
-    "description": "Text for the sign up with Google button"
-  },
-  "signUpWithAppleButton": "Apple",
-  "@signUpWithAppleButton": {
-    "context": "Buttons",
-    "description": "Text for the sign up with Google button"
-  },
-  "continueWith": "Continue with",
-  "@continueWith": {
-    "context": "loginScreen",
-    "description": "Text for login button section"
-  },
-  "personalInfo": "Personal info",
-  "@personalInfo": {
-    "context": "settingsScreen",
-    "description": "Text for card in settings screen"
-  },
-  "personalInfoDescription": "Language, account settings",
-  "@personalInfoDescription": {
-    "context": "settingsScreen",
-    "description": "Text for description on card in settings screen"
-  },
-  "contactPermissions": "Contact permissions",
-  "@contactPermissions": {
-    "context": "settingsScreen",
-    "description": "Text for card in settings screen"
-  },
-  "contactPermissionsDescription": "Notifications and app permissions",
-  "@contactPermissionsDescription": {
-    "context": "settingsScreen",
-    "description": "Text for description on card in settings screen"
-  },
-  "changePassword": "Change password",
-  "@changePassword": {
-    "context": "settingsScreen",
-    "description": "Text for card in settings screen"
-  },
-  "changePasswordDescription": "Change password",
-  "@changePasswordDescription": {
-    "context": "settingsScreen",
-    "description": "Text for description on card in settings screen"
-  },
-  "support": "Support",
-  "@support": {
-    "context": "settingsScreen",
-    "description": "Text for card in settings screen"
-  },
-  "supportDescription": "Know about our app",
-  "@supportDescription": {
-    "context": "settingsScreen",
-    "description": "Text for description on card in settings screen"
-  },
-  "logOut": "Log out",
-  "@logOut": {
-    "context": "settingsScreen",
-    "description": "Text for card in settings screen"
-  },
-  "logOutDescription": "Log out from the app",
-  "@logOutDescription": {
-    "context": "settingsScreen",
-    "description": "Text for description on card in settings screen"
-  },
-  "deleteAccount": "Delete account",
-  "@deleteAccount": {
-    "context": "settingsScreen",
-    "description": "Text for card in settings screen"
-  },
-  "deleteAccountDescription": "Delete your account",
-  "@deleteAccountDescription": {
-    "context": "settingsScreen",
-    "description": "Text for description on card in settings screen"
+  "otherLogins": "You can log in via platforms or biometrics",
+  "@otherLogins": {
+    "context": "Text",
+    "description": "Text for the login page"
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lion_trade/generated/l10n.dart';
 import 'package:lion_trade/helpers/image_constants.dart';
 import 'package:lion_trade/style/colors.dart';
 import 'package:lion_trade/style/fonts/lt_font_weight.dart';
@@ -19,7 +20,7 @@ class WelcomeHeader extends StatelessWidget {
           ),
         ),
         Text(
-          'Your history begins here',
+          S.current.welcomeText,
           style: LtTextStyle.inter14medium,
         ),
         const SizedBox(

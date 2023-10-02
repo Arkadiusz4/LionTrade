@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:lion_trade/generated/l10n.dart';
 import 'package:lion_trade/helpers/image_constants.dart';
 import 'package:lion_trade/helpers/svg_constants.dart';
 import 'package:lion_trade/screens/login/login/widgets/_login_widgets.dart';
+import 'package:lion_trade/screens/login/login/widgets/bottom_login_section.dart';
 import 'package:lion_trade/screens/login/login/widgets/welcome_header.dart';
 import 'package:lion_trade/style/color/lt_gradient.dart';
 import 'package:lion_trade/style/colors.dart';
@@ -36,7 +38,7 @@ class LoginPage extends StatelessWidget {
                   height: 80,
                 ),
                 Text(
-                  'Please sign in to your account',
+                  S.current.signInText,
                   style: LtTextStyle.inter16regular,
                 ),
                 Stack(
@@ -47,7 +49,7 @@ class LoginPage extends StatelessWidget {
                       controller: _emailController,
                       textInputType: TextInputType.text,
                       textInputAction: TextInputAction.next,
-                      hintText: 'fafaf',
+                      hintText: S.current.emailHint,
                     ),
                     const Positioned(
                       left: 0,
@@ -65,7 +67,7 @@ class LoginPage extends StatelessWidget {
                       controller: _emailController,
                       textInputType: TextInputType.text,
                       textInputAction: TextInputAction.next,
-                      hintText: 'fafaf',
+                      hintText: S.current.passwordHint,
                     ),
                     const Positioned(
                       right: 0,
@@ -76,14 +78,14 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
                 Text(
-                  'Forgot password?',
+                  S.current.forgotPasswordButton,
                   style: LtTextStyle.customize(
                       LtFontWeight: LtFontWeight.extraLight, color: LtColor.orange, fontSize: 16.0),
                 ),
                 const SizedBox(
                   height: 80.0,
                 ),
-
+                const BottomLoginSection(),
               ],
             ),
           ),

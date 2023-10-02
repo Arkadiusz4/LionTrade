@@ -60,22 +60,52 @@ class S {
     );
   }
 
-  /// `Login`
+  /// `Let's start`
   String get loginButton {
     return Intl.message(
-      'Login',
+      'Let\'s start',
       name: 'loginButton',
-      desc: '',
+      desc: 'Text for the login button',
       args: [],
     );
   }
 
-  /// `Register`
-  String get registerButton {
+  /// `Your history begins here`
+  String get welcomeText {
     return Intl.message(
-      'Register',
-      name: 'registerButton',
-      desc: 'Text for the register button',
+      'Your history begins here',
+      name: 'welcomeText',
+      desc: 'Text for the welcome header',
+      args: [],
+    );
+  }
+
+  /// `Please sign in to your account`
+  String get signInText {
+    return Intl.message(
+      'Please sign in to your account',
+      name: 'signInText',
+      desc: 'Text for the login page',
+      args: [],
+    );
+  }
+
+  /// `email`
+  String get emailHint {
+    return Intl.message(
+      'email',
+      name: 'emailHint',
+      desc: 'Text for the login page',
+      args: [],
+    );
+  }
+
+  /// `password`
+  String get passwordHint {
+    return Intl.message(
+      'password',
+      name: 'passwordHint',
+      desc: 'Text for the login page',
       args: [],
     );
   }
@@ -90,192 +120,12 @@ class S {
     );
   }
 
-  /// `Name`
-  String get nameFormHint {
+  /// `You can log in via platforms or biometrics`
+  String get otherLogins {
     return Intl.message(
-      'Name',
-      name: 'nameFormHint',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Surname`
-  String get surnameFormHint {
-    return Intl.message(
-      'Surname',
-      name: 'surnameFormHint',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Enter your email`
-  String get emailFormHint {
-    return Intl.message(
-      'Enter your email',
-      name: 'emailFormHint',
-      desc: 'Email form hint',
-      args: [],
-    );
-  }
-
-  /// `Enter your password`
-  String get passwordFormHint {
-    return Intl.message(
-      'Enter your password',
-      name: 'passwordFormHint',
-      desc: 'Password form hint',
-      args: [],
-    );
-  }
-
-  /// `Google`
-  String get signUpWithGoogleButton {
-    return Intl.message(
-      'Google',
-      name: 'signUpWithGoogleButton',
-      desc: 'Text for the sign up with Google button',
-      args: [],
-    );
-  }
-
-  /// `Apple`
-  String get signUpWithAppleButton {
-    return Intl.message(
-      'Apple',
-      name: 'signUpWithAppleButton',
-      desc: 'Text for the sign up with Google button',
-      args: [],
-    );
-  }
-
-  /// `Continue with`
-  String get continueWith {
-    return Intl.message(
-      'Continue with',
-      name: 'continueWith',
-      desc: 'Text for login button section',
-      args: [],
-    );
-  }
-
-  /// `Personal info`
-  String get personalInfo {
-    return Intl.message(
-      'Personal info',
-      name: 'personalInfo',
-      desc: 'Text for card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Language, account settings`
-  String get personalInfoDescription {
-    return Intl.message(
-      'Language, account settings',
-      name: 'personalInfoDescription',
-      desc: 'Text for description on card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Contact permissions`
-  String get contactPermissions {
-    return Intl.message(
-      'Contact permissions',
-      name: 'contactPermissions',
-      desc: 'Text for card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Notifications and app permissions`
-  String get contactPermissionsDescription {
-    return Intl.message(
-      'Notifications and app permissions',
-      name: 'contactPermissionsDescription',
-      desc: 'Text for description on card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Change password`
-  String get changePassword {
-    return Intl.message(
-      'Change password',
-      name: 'changePassword',
-      desc: 'Text for card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Change password`
-  String get changePasswordDescription {
-    return Intl.message(
-      'Change password',
-      name: 'changePasswordDescription',
-      desc: 'Text for description on card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Support`
-  String get support {
-    return Intl.message(
-      'Support',
-      name: 'support',
-      desc: 'Text for card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Know about our app`
-  String get supportDescription {
-    return Intl.message(
-      'Know about our app',
-      name: 'supportDescription',
-      desc: 'Text for description on card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Log out`
-  String get logOut {
-    return Intl.message(
-      'Log out',
-      name: 'logOut',
-      desc: 'Text for card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Log out from the app`
-  String get logOutDescription {
-    return Intl.message(
-      'Log out from the app',
-      name: 'logOutDescription',
-      desc: 'Text for description on card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Delete account`
-  String get deleteAccount {
-    return Intl.message(
-      'Delete account',
-      name: 'deleteAccount',
-      desc: 'Text for card in settings screen',
-      args: [],
-    );
-  }
-
-  /// `Delete your account`
-  String get deleteAccountDescription {
-    return Intl.message(
-      'Delete your account',
-      name: 'deleteAccountDescription',
-      desc: 'Text for description on card in settings screen',
+      'You can log in via platforms or biometrics',
+      name: 'otherLogins',
+      desc: 'Text for the login page',
       args: [],
     );
   }
