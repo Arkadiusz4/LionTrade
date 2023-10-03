@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lion_trade/helpers/svg_constants.dart';
-import 'package:lion_trade/widgets/shapes/lt_circle.dart';
+import 'package:lion_trade/helpers/_helpers.dart';
+import 'package:lion_trade/widgets/_widgets.dart';
 
 class LoginButtonsSection extends StatelessWidget {
   const LoginButtonsSection({Key? key}) : super(key: key);

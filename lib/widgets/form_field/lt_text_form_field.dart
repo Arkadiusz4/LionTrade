@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lion_trade/style/colors.dart';
+import 'package:lion_trade/style/color/colors.dart';
 
 class LtTextFormField extends StatelessWidget {
   final TextEditingController controller;

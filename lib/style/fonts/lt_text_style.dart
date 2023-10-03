@@ -1,6 +1,6 @@
 // ignore_for_file: avoid_classes_with_only_static_members
 import 'package:flutter/material.dart';
-import 'package:lion_trade/style/colors.dart';
+import 'package:lion_trade/style/color/colors.dart';
 import 'package:lion_trade/style/fonts/lt_font_weight.dart';
 
 class LtTextStyle {

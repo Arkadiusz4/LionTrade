@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
 import 'package:lion_trade/helpers/validators.dart';
-import 'package:lion_trade/style/colors.dart';
+import 'package:lion_trade/style/color/colors.dart';
 import 'package:lion_trade/widgets/buttons/_buttons.dart';
 import 'package:lion_trade/widgets/form_field/_form_field.dart';
 

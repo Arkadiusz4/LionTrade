@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:lion_trade/style/colors.dart';
+import 'package:lion_trade/style/color/colors.dart';
 
 class LtGradient {
   const LtGradient._();

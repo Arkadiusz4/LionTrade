@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lion_trade/generated/l10n.dart';
-import 'package:lion_trade/helpers/svg_constants.dart';
-import 'package:lion_trade/screens/login/login/widgets/login_buttons_section.dart';
-import 'package:lion_trade/style/fonts/lt_text_style.dart';
+import 'package:lion_trade/helpers/_helpers.dart';
+import 'package:lion_trade/screens/login/login/widgets/_login_widgets.dart';
+import 'package:lion_trade/style/_style.dart';
 
 class BottomLoginSection extends StatelessWidget {
   const BottomLoginSection({super.key});

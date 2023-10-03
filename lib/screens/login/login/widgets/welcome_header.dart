@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lion_trade/generated/l10n.dart';
-import 'package:lion_trade/helpers/image_constants.dart';
-import 'package:lion_trade/style/colors.dart';
-import 'package:lion_trade/style/fonts/lt_font_weight.dart';
-import 'package:lion_trade/style/fonts/lt_text_style.dart';
+import 'package:lion_trade/helpers/_helpers.dart';
+import 'package:lion_trade/style/_style.dart';
 
 class WelcomeHeader extends StatelessWidget {
   const WelcomeHeader({super.key});
